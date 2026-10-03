@@ -1,13 +1,3 @@
-/* =====================================================
-   PORTFOLIO - Leandro Mikolajewski
-   Paleta tomada de la foto de perfil:
-   - fondo:   azul casi negro del pantalón
-   - acento:  amarillo verdoso del chaleco
-   - madera:  marrón de la mesa de trabajo
-   - gris:    gris de la remera y la pared
-   ===================================================== */
-
-/* ---------- Variables de color (editá acá la paleta) ---------- */
 :root {
   --color-fondo: #121720;
   --color-superficie: #1c1b1f;
@@ -18,7 +8,6 @@
   --alto-menu: 64px;
 }
 
-/* ---------- Base ---------- */
 * { box-sizing: border-box; }
 
 html {
@@ -53,7 +42,6 @@ p { margin: 0 0 1rem; }
 .contenedor { width: min(1080px, 100% - 2.5rem); margin-inline: auto; }
 section { padding: 4.5rem 0; }
 
-/* ---------- Botones ---------- */
 .boton {
   display: inline-block;
   padding: 0.75rem 1.4rem;
@@ -70,9 +58,6 @@ section { padding: 4.5rem 0; }
 .boton-sec { background: transparent; color: var(--color-texto); border-color: var(--color-suave); }
 .boton-sec:hover { color: var(--color-acento); border-color: var(--color-acento); }
 
-/* =====================================================
-   1. MENÚ (fijo arriba)
-   ===================================================== */
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -94,14 +79,12 @@ section { padding: 4.5rem 0; }
   text-decoration: none;
 }
 
-/* El checkbox queda oculto pero se puede usar con teclado */
 .menu-toggle {
   position: absolute;
   opacity: 0;
   width: 1px; height: 1px;
 }
 
-/* Botón hamburguesa hecho con CSS */
 .menu-icono {
   width: 44px; height: 44px;
   display: flex;
@@ -124,7 +107,6 @@ section { padding: 4.5rem 0; }
 .menu-icono span::after  { position: absolute; top: 7px; }
 .menu-toggle:focus-visible + .menu-icono { outline: 3px solid var(--color-acento); }
 
-/* Menú desplegable en celular */
 .menu {
   display: none;
   position: absolute;
@@ -144,9 +126,6 @@ section { padding: 4.5rem 0; }
 }
 .menu a:hover { color: var(--color-acento); }
 
-/* =====================================================
-   2. PRESENTACIÓN INICIAL
-   ===================================================== */
 .hero { padding-top: calc(var(--alto-menu) + 2.5rem); }
 .hero-grid { display: grid; gap: 2.5rem; align-items: center; }
 .hero h1 { font-size: 2.6rem; }
@@ -159,7 +138,6 @@ section { padding: 4.5rem 0; }
 }
 .botones { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 
-/* Marco decorativo de la foto */
 .marco-foto {
   position: relative;
   width: min(300px, 80%);
@@ -181,9 +159,6 @@ section { padding: 4.5rem 0; }
   background: var(--color-superficie);
 }
 
-/* =====================================================
-   3. SOBRE MÍ
-   ===================================================== */
 #sobre-mi { background: var(--color-superficie); }
 .datos {
   list-style: none;
@@ -205,9 +180,6 @@ section { padding: 4.5rem 0; }
 .timeline li { margin-bottom: 1rem; }
 .timeline .fecha { display: block; font-weight: bold; color: var(--color-acento); }
 
-/* =====================================================
-   4. CONOCIMIENTOS
-   ===================================================== */
 .grupos { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .grupo {
   background: var(--color-superficie);
@@ -225,9 +197,6 @@ section { padding: 4.5rem 0; }
   font-size: 0.92rem;
 }
 
-/* =====================================================
-   6. REDES
-   ===================================================== */
 .redes { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; }
 .redes a {
   display: flex;
@@ -246,9 +215,6 @@ section { padding: 4.5rem 0; }
 .redes a:hover { border-color: var(--color-acento); color: var(--color-acento); }
 .redes svg { width: 48px; height: 48px; fill: currentColor; }
 
-/* =====================================================
-   7. FORMULARIO DE CONTACTO
-   ===================================================== */
 #contacto { background: var(--color-superficie); }
 form { max-width: 640px; }
 label { display: block; margin: 1rem 0 0.3rem; font-weight: bold; }
@@ -265,23 +231,16 @@ input:focus, textarea:focus { outline: none; border-color: var(--color-acento); 
 textarea { resize: vertical; }
 form .boton { margin-top: 1.5rem; }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
 .site-footer { padding: 2rem 0; text-align: center; color: var(--color-suave); border-top: 1px solid var(--color-madera); }
 .site-footer p { margin: 0 0 0.25rem; }
 .site-footer .detalle { color: var(--color-acento); font-family: "Courier New", monospace; font-size: 0.95rem; }
 
-/* =====================================================
-   TABLET Y ESCRITORIO
-   ===================================================== */
 @media (min-width: 700px) {
   .hero-grid { grid-template-columns: 1.3fr 1fr; }
   .hero h1 { font-size: 3.4rem; }
 }
 
 @media (min-width: 860px) {
-  /* Menú horizontal: se oculta la hamburguesa */
   .menu-icono { display: none; }
   .menu {
     display: block;
