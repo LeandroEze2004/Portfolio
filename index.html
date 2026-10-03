@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: título y descripción que aparecen en Google -->
+  <title>Leandro Mikolajewski | Portfolio de programador C++, C# y SQL</title>
+  <meta name="description" content="Portfolio de Leandro Mikolajewski, estudiante de la Tecnicatura en Programación en la UTN FRGP. Conocimientos en C++, C#, programación orientada a objetos y bases de datos SQL Server.">
+  <meta name="author" content="Leandro Ezequiel Mikolajewski">
+
+  <!-- Vista previa al compartir el link -->
+  <meta property="og:title" content="Leandro Mikolajewski | Portfolio de programador">
+  <meta property="og:description" content="Conocimientos, experiencia y datos de contacto de Leandro Mikolajewski.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= 1. MENÚ ================= -->
+  <header class="site-header">
+    <div class="contenedor barra">
+      <a class="logo" href="#inicio">Leandro Mikolajewski</a>
+
+      <!-- Menú hamburguesa solo con CSS (checkbox + label) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icono" aria-label="Abrir o cerrar el menú"><span></span></label>
+
+      <nav class="menu" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#conocimientos">Conocimientos</a></li>
+          <li><a href="#redes">Redes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= 2. PRESENTACIÓN INICIAL CON FOTO ================= -->
+    <section id="inicio" class="hero">
+      <div class="contenedor hero-grid">
+        <div class="hero-texto">
+          <h1>Leandro Mikolajewski<span class="titulo">Programador en formación · C++, C# y SQL</span></h1>
+          <p>Estudiante de la Tecnicatura en Programación en la UTN FRGP. Me gusta resolver problemas con código y entender cómo funciona cada parte de un sistema.</p>
+          <div class="botones">
+            <a class="boton" href="#conocimientos">Ver conocimientos</a>
+            <!-- EDITAR: poné tu CV en la carpeta cv/ con este nombre -->
+            <a class="boton boton-sec" href="cv/CV-Leandro-Mikolajewski.pdf" download>Descargar CV</a>
+          </div>
+        </div>
+        <div class="marco-foto">
+          <img src="img/foto-perfil.jpg" alt="Leandro Mikolajewski trabajando en un tablero de entrenamiento de PLC" width="640" height="800">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. INFORMACIÓN GENERAL ================= -->
+    <section id="sobre-mi">
+      <div class="contenedor">
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de la Tecnicatura en Programación en la Universidad Tecnológica Nacional, Facultad Regional General Pacheco. Soy responsable, organizado y me adapto rápido a distintas situaciones. Me destaco por el trabajo en equipo, la buena comunicación y una actitud positiva frente a los desafíos.</p>
+        <p>Busco crecer profesionalmente y aportar valor en un entorno laboral, aplicando lo que aprendo en programación y bases de datos.</p>
+
+        <ul class="datos">
+          <li><strong>Educación</strong>Tecnicatura en Programación, UTN FRGP (desde marzo de 2026)</li>
+          <li><strong>Formación complementaria</strong>Curso de Instalaciones Eléctricas Industriales, UTN FRGP</li>
+          <li><strong>Estudios secundarios</strong>Bachiller en Economía y Administración, Mariano Moreno (2022)</li>
+          <li><strong>Ubicación</strong>Tigre, Buenos Aires</li>
+          <li><strong>Disponibilidad</strong>Full time, o curso noche o mañana (asincrónico)</li>
+        </ul>
+
+        <h3>Experiencia laboral</h3>
+        <ol class="timeline">
+          <li><span class="fecha">Julio 2026 – Actualidad</span>Operario logístico / Auxiliar de operaciones en Andreani, Gral. Pacheco.</li>
+          <li><span class="fecha">Enero 2026 – Julio 2026</span>Asistente / Aprendiz de Programación en Volkswagen Argentina, Gral. Pacheco.</li>
+          <li><span class="fecha">Enero 2026 – Julio 2026</span>Asistente / Aprendiz Técnico en Ford Argentina, Gral. Pacheco.</li>
+          <li><span class="fecha">Agosto 2025 – Enero 2026</span>Crew / Empleado de restaurante en McDonald's, Tigre.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 4. CONOCIMIENTOS ================= -->
+    <section id="conocimientos">
+      <div class="contenedor">
+        <h2>Conocimientos</h2>
+
+        <div class="grupos">
+          <article class="grupo">
+            <h3>Lenguajes</h3>
+            <ul class="etiquetas">
+              <li>C++</li>
+              <li>C#</li>
+              <li>SQL</li>
+            </ul>
+            <p>C++ con programación estructurada y orientada a objetos: funciones, vectores, matrices, punteros, ordenamiento, manejo de archivos, clases, herencia y separación en archivos .h y .cpp. C# con lógica de programación y conceptos de orientación a objetos.</p>
+          </article>
+
+          <article class="grupo">
+            <h3>Bases de datos</h3>
+            <ul class="etiquetas">
+              <li>Microsoft SQL Server</li>
+              <li>SSMS</li>
+              <li>DDL y DML</li>
+              <li>Modelado de datos</li>
+              <li>Normalización 1FN y 2FN</li>
+            </ul>
+            <p>Consultas y operaciones sobre bases de datos relacionales, creación y modificación de tablas, claves primarias y foráneas, relaciones 1:N y diagramas entidad-relación.</p>
+          </article>
+
+          <article class="grupo">
+            <h3>Fundamentos</h3>
+            <ul class="etiquetas">
+              <li>Algoritmos</li>
+              <li>Estructuras de datos</li>
+              <li>Programación orientada a objetos</li>
+              <li>Resolución de problemas</li>
+            </ul>
+            <p>Lógica de programación, descomposición de problemas y desarrollo de soluciones mediante código.</p>
+          </article>
+
+          <article class="grupo">
+            <h3>Herramientas</h3>
+            <ul class="etiquetas">
+              <li>GitHub</li>
+              <li>Visual Studio Code</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. REDES ================= -->
+    <section id="redes">
+      <div class="contenedor">
+        <h2>Redes</h2>
+        <ul class="redes">
+          <li>
+            <a href="https://www.linkedin.com/in/leandro-mikolajewski-99367129a/" target="_blank" rel="noopener" aria-label="LinkedIn de Leandro Mikolajewski">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/LeandroEze2004" target="_blank" rel="noopener" aria-label="GitHub de Leandro Mikolajewski">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:Mikolajewski.04@gmail.com" aria-label="Enviar un correo a Leandro Mikolajewski">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+              <span>Email</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= 7. FORMULARIO DE CONTACTO ================= -->
+    <section id="contacto">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <!-- Formulario conectado a Formspree -->
+        <form action="https://formspree.io/f/xgavgwdw" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+          <button class="boton" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="contenedor">
+      <p>© 2026 Leandro Ezequiel Mikolajewski</p>
+      <p class="detalle">&lt;/&gt; hecho con HTML y CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
